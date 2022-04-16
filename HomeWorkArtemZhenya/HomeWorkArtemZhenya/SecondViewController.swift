@@ -44,6 +44,8 @@ class SecondViewController: UIViewController {
         backButton.setTitle("My second Button", for: .normal)
         
         firstLabel.backgroundColor = .white
+        
+        backButton.addTarget(self, action: #selector(backButtonaction(_:)), for: .primaryActionTriggered)
     }
     
     override func viewDidAppear(_ animated: Bool) {
