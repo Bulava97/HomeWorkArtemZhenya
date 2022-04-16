@@ -8,22 +8,46 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    let backButton = UIButton()
+    let firstLabel = UILabel()
+    
+    weak var delegate: SecondViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        configuration()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configuration() {
+        view.backgroundColor = .cyan
+        
+        view.addSubview(backButton)
+        view.addSubview(firstLabel)
+        
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+        firstLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            backButton.topAnchor.constraint(equalTo: firstLabel.bottomAnchor, constant: 100),
+            
+            firstLabel.heightAnchor.constraint(equalToConstant: 30),
+            firstLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
+            firstLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            firstLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
+        ])
+        
+        backButton.backgroundColor = .blue
+        backButton.setTitle("My second Button", for: .normal)
+        
+        firstLabel.backgroundColor = .white
     }
-    */
+    
+}
 
+protocol SecondViewControllerDelegate: AnyObject {
+    func textForVC(vc: SecondViewController) -> [String]
 }
