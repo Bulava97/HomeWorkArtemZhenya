@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385FEF57280AF1BC00BF428F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385FEF56280AF1BC00BF428F /* SecondViewController.swift */; };
 		C93F6896280AE41C00B75C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F6895280AE41C00B75C64 /* AppDelegate.swift */; };
 		C93F6898280AE41C00B75C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F6897280AE41C00B75C64 /* SceneDelegate.swift */; };
 		C93F689A280AE41C00B75C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F6899280AE41C00B75C64 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385FEF56280AF1BC00BF428F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C93F6892280AE41C00B75C64 /* HomeWorkArtemZhenya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkArtemZhenya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F6895280AE41C00B75C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93F6897280AE41C00B75C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C93F689E280AE41D00B75C64 /* Assets.xcassets */,
 				C93F68A0280AE41D00B75C64 /* LaunchScreen.storyboard */,
 				C93F68A3280AE41D00B75C64 /* Info.plist */,
+				385FEF56280AF1BC00BF428F /* SecondViewController.swift */,
 			);
 			path = HomeWorkArtemZhenya;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385FEF57280AF1BC00BF428F /* SecondViewController.swift in Sources */,
 				C93F689A280AE41C00B75C64 /* ViewController.swift in Sources */,
 				C93F6896280AE41C00B75C64 /* AppDelegate.swift in Sources */,
 				C93F6898280AE41C00B75C64 /* SceneDelegate.swift in Sources */,
