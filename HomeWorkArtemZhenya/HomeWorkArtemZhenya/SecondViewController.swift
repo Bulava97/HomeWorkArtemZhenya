@@ -46,6 +46,13 @@ class SecondViewController: UIViewController {
         firstLabel.backgroundColor = .white
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        firstLabel.text = (delegate?.textForVC(vc: self)[0] ?? "") + " " + (delegate?.textForVC(vc: self)[1] ?? "")
+    }
+    
+    @objc func backButtonaction(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }
 
 protocol SecondViewControllerDelegate: AnyObject {
